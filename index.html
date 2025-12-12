@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>Bassam Helwani's Portfolio Website </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -24,16 +24,15 @@
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>Dimension</h1>
-								<p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-								for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+								<h1>Welcome!</h1>
+								<p>This is Bassam Helwani's Portfolio Website. Here you can learn more about me and my project.</p>
 							</div>
 						</div>
 						<nav>
 							<ul>
 								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#about">About</a></li>
+								<li><a href="#work">Backend</a></li>
+								<li><a href="#about">Frontend</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -46,24 +45,38 @@
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+								<span class="image main"><img src="images/pic01.png" alt="" /></span>
+								Hello! My name is Bassam Helwani, and I am originally from Syria. I am currently pursuing my Bachelors degree in Mechatronics in Berlin.This website showcases one of my final projects: a custom-designed movie library platform. 
+									<br><br>Here, you can explore films from various genres, check their release years, and read short descriptions. You can also add, delete, and organize movies to create your own personal collection—whether it’s a list of films you’ve already watched or those you plan to enjoy in the future.I hope you enjoy exploring it as much as I enjoyed building it.</br></p>
+								<div>
+									<span class="icon brands fa-instagram"></span> basxsam_<br>
+									<span class="icon solid fa-envelope"></span> bassam2005helwani@gmail.com<br>
+									<span class="icon solid fa-phone"></span> +971 56 788 9140<br>
+									<span class="icon solid fa-map-marker-alt"></span> Morusstrasse 28, 12053 Berlin
+								</div>
 							</article>
-
-						<!-- Work -->
+						<!-- Backend -->
 							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<h2 class="major">Backend</h2>
+								<span class="image main"><img src="images/pic02.png" alt="" /></span>
+								<p>This backend code consists of three main components designed to make the application self-contained and robust:
+									<br><br>
+									Dependency Fallback: The large block at the beginning is a compatibility layer. It checks if the external requests library is installed; if not, it uses Python's built-in urllib to create a _RequestsFallback class that mimics requests, ensuring the app runs without requiring the user to manually install dependencies .
+									<br><br>
+									Data Persistence: The backend manages a database of movies stored in a local file named movies.json. If this file is missing, the system automatically creates it using a hardcoded DEFAULT_DATA dictionary containing over 50 pre-defined movies.
+									<br><br>
+									Flask API: It utilizes the Flask framework to run a local web server. This server exposes HTTP endpoints (/media) that allow the frontend to GET (retrieve/search), POST (create), and DELETE movie data dynamically.</p>
 							</article>
 
 						<!-- About -->
 							<article id="about">
-								<h2 class="major">About</h2>
+								<h2 class="major">Frontend</h2>
 								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<p>The View (GUI): It uses the Tkinter library to build the visual dashboard, including the search bar, the "Treeview" table for listing movies, and the action buttons  [cite: 23, 57-62].  
+									<br><br>
+									The Connector: It acts as the "client" in the architecture. [cite_start]When a user clicks a button, the frontend does not process data itself; instead, it sends HTTP requests (GET, POST, DELETE) to the Flask backend endpoints to handle the logic.  
+									<br><br>
+									The Features: It implements the specific user requirements: filtering lists by category, searching by name, and displaying metadata in a popup when a movie is clicked</p>
 							</article>
 
 						<!-- Contact -->
@@ -89,12 +102,6 @@
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
 							</article>
 
 						<!-- Elements -->
